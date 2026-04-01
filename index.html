@@ -18,6 +18,7 @@
     html { scroll-behavior: smooth; }
     body { font-family: var(--sans); background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
 
+    /* ── Nav ── */
     nav { position: fixed; top: 0; width: 100%; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 6vw; background: rgba(244,241,235,0.88); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
     .nav-name { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.08em; color: var(--muted); }
     nav ul { list-style: none; display: flex; gap: 2rem; }
@@ -28,22 +29,71 @@
     .section-label { font-family: var(--mono); font-size: 0.95rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; font-weight: 700; }
     .divider { height: 1px; background: var(--border); margin: 0 6vw; }
 
-    /* Hero */
-    #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4rem; padding-top: 6rem; }
+    /* ══════════════════════════════
+       HERO — Desktop layout
+    ══════════════════════════════ */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 4rem;
+      padding: 6rem 6vw 4rem;
+    }
+
     .hero-content { display: flex; flex-direction: column; }
     .hero-index { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.12em; margin-bottom: 1.2rem; }
-    .hero-name { font-family: var(--serif); font-size: clamp(3rem, 7vw, 7rem); font-weight: 300; line-height: 1.05; color: var(--text); margin-bottom: 1.5rem; }
+
+    /* Name row: name text + mobile photo side-by-side */
+    .hero-name-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-name {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 7vw, 7rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--text);
+    }
     .hero-name em { font-style: normal; color: var(--accent); }
+
+    /* Mobile photo — hidden on desktop, shown on mobile */
+    .hero-photo-mobile {
+      display: none;
+      flex-shrink: 0;
+    }
+    .hero-photo-mobile img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border);
+      margin-top: 0.4rem;
+    }
+
     .hero-title { font-family: var(--mono); font-size: 1.05rem; letter-spacing: 0.1em; color: var(--muted); border-left: 2px solid var(--accent); padding-left: 1rem; margin-bottom: 2.5rem; font-weight: 700; }
     .hero-bio { max-width: 520px; color: var(--muted); font-size: 1.05rem; font-weight: 300; line-height: 1.8; margin-bottom: 3rem; }
     .hero-links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
 
-    /* Photo */
-    .hero-photo-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; flex-shrink: 0; }
-    .photo-frame { width: 220px; height: 270px; border-radius: 6px; overflow: hidden; border: 1.5px solid var(--border); background: var(--bg-card); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem; }
-    .photo-placeholder-icon { width: 56px; height: 56px; border-radius: 50%; background: var(--bg-tag); border: 1.5px dashed var(--border); display: flex; align-items: center; justify-content: center; }
-    .photo-placeholder-icon svg { width: 28px; height: 28px; stroke: var(--muted); fill: none; stroke-width: 1.5; }
-    .photo-hint { font-family: var(--mono); font-size: 0.62rem; color: var(--muted); text-align: center; letter-spacing: 0.06em; line-height: 1.6; padding: 0 1rem; }
+    /* Desktop photo column */
+    .hero-photo-desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+    .hero-photo-desktop img {
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--border);
+    }
     .photo-badge { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em; color: var(--accent); background: #E8EFF8; padding: 0.25rem 0.7rem; border-radius: 2px; }
 
     /* Buttons */
@@ -53,7 +103,7 @@
     .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
     .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
-    /* About */
+    /* ── About ── */
     .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; }
     .about-stats { display: flex; flex-direction: column; gap: 1.5rem; }
     .stat-block { border-left: 2px solid var(--border); padding-left: 1rem; }
@@ -63,7 +113,7 @@
     .about-text { font-size: 1.05rem; font-weight: 300; color: #444; line-height: 1.9; }
     .about-text p + p { margin-top: 1.2rem; }
 
-    /* Experience */
+    /* ── Experience ── */
     .timeline { display: flex; flex-direction: column; }
     .timeline-item { display: grid; grid-template-columns: 140px 1fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); }
     .timeline-item:last-child { border-bottom: none; }
@@ -74,7 +124,7 @@
     .timeline-bullets li { font-size: 0.88rem; color: var(--muted); font-weight: 300; padding-left: 1rem; position: relative; }
     .timeline-bullets li::before { content: '—'; position: absolute; left: 0; color: var(--border); }
 
-    /* Projects */
+    /* ── Projects ── */
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5px; border: 1.5px solid var(--border); }
     .project-card { background: var(--bg); padding: 2rem 2rem 2.5rem; border: 1.5px solid var(--border); transition: background 0.2s; }
     .project-card:hover { background: var(--bg-card); }
@@ -86,14 +136,14 @@
     .project-link { display: inline-block; margin-top: 1.5rem; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--accent); text-decoration: none; }
     .project-link:hover { text-decoration: underline; }
 
-    /* Skills */
+    /* ── Skills ── */
     .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
     .skill-group-title { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); }
     .skill-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
     .skill-list li { font-family: var(--mono); font-size: 0.82rem; color: var(--text); display: flex; align-items: center; gap: 0.6rem; }
     .skill-list li::before { content: ''; display: inline-block; width: 5px; height: 5px; background: var(--accent); border-radius: 50%; flex-shrink: 0; }
 
-    /* Contact */
+    /* ── Contact ── */
     #contact { background: var(--bg-card); }
     .contact-inner { max-width: 600px; }
     .contact-heading { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.5rem; }
@@ -109,9 +159,51 @@
     .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.65s cubic-bezier(.4,0,.2,1), transform 0.65s cubic-bezier(.4,0,.2,1); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    @media (max-width: 900px) { #hero { grid-template-columns: 1fr; } .hero-photo-wrap { display: none; } }
-    @media (max-width: 720px) { nav ul { gap: 1.2rem; } .about-grid { grid-template-columns: 1fr; gap: 2.5rem; } .about-stats { flex-direction: row; flex-wrap: wrap; } .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; } section { padding: 5rem 5vw; } }
-    @media (max-width: 480px) { nav ul li:nth-child(3), nav ul li:nth-child(4) { display: none; } }
+    /* ══════════════════════════════
+       RESPONSIVE — Tablet
+    ══════════════════════════════ */
+    @media (max-width: 900px) {
+      /* Collapse hero to single column */
+      #hero {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      /* Hide the large desktop photo column */
+      .hero-photo-desktop { display: none; }
+
+      /* Show the small photo next to the name */
+      .hero-photo-mobile { display: flex; }
+
+      /* Name row: name on left, small photo on right */
+      .hero-name-row {
+        align-items: center;
+      }
+    }
+
+    /* ══════════════════════════════
+       RESPONSIVE — Mobile
+    ══════════════════════════════ */
+    @media (max-width: 720px) {
+      nav ul { gap: 1.2rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-stats { flex-direction: row; flex-wrap: wrap; }
+      .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      section { padding: 5rem 5vw; }
+
+      /* Slightly smaller mobile photo on small screens */
+      .hero-photo-mobile img {
+        width: 88px;
+        height: 88px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav ul li:nth-child(3), nav ul li:nth-child(4) { display: none; }
+      .hero-photo-mobile img {
+        width: 76px;
+        height: 76px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -129,7 +221,15 @@
   <section id="hero">
     <div class="hero-content">
       <p class="hero-index">// 00 &nbsp;&#8212;&nbsp; portfolio</p>
-      <h1 class="hero-name">Nadun<br /><em>Kaushalya.</em></h1>
+
+      <!-- Name row: name left, mobile photo right (mobile only) -->
+      <div class="hero-name-row">
+        <h1 class="hero-name">Nadun<br /><em>Kaushalya.</em></h1>
+        <div class="hero-photo-mobile">
+          <img src="IMG_2559.png" alt="Nadun Kaushalya" />
+        </div>
+      </div>
+
       <p class="hero-title">DATA-FOCUSED BACKEND ENGINEER</p>
       <p class="hero-bio">
         2+ years designing SQL databases, building ETL pipelines, and integrating
@@ -143,9 +243,9 @@
       </div>
     </div>
 
-    <div class="hero-photo-wrap">
-      <img src="IMG_2559.png" alt="Nadun Kaushalya"
-                style="width:420px;height:420px;object-fit:cover;border-radius:50%;border:1.5px solid var(--border);" />
+    <!-- Desktop-only: large photo in right grid column -->
+    <div class="hero-photo-desktop">
+      <img src="IMG_2559.png" alt="Nadun Kaushalya" />
       <span class="photo-badge">Colombo, Sri Lanka</span>
     </div>
   </section>
@@ -248,15 +348,14 @@
       </div>
       <div class="project-card reveal">
         <p class="project-number">02</p>
-        <h3 class="project-title">Car Service Management System (Fullstack)</h3>
+        <h3 class="project-title">Car Service Management System</h3>
         <p class="project-desc">
-          Final-year personal project: fullstack car service management system with
-          booking requests, service history, and admin dashboards. Achieved A pass
-          for end-to-end design, implementation, and testing.
+          Final-year fullstack car service management system with booking requests, service history,
+          and admin dashboards. Achieved A pass for end-to-end design, implementation, and testing.
         </p>
         <div class="tags">
-          <span class="tag">Fullstack</span><span class="tag">Web App</span>
-          <span class="tag">PHP</span><span class="tag">SQL</span>
+          <span class="tag">Fullstack</span><span class="tag">PHP</span>
+          <span class="tag">SQL</span><span class="tag">Web App</span>
         </div>
         <a href="https://github.com/nadun-k-s/Car-Service-Management-System.git" target="_blank" class="project-link">GitHub &#8599;</a>
       </div>
@@ -272,7 +371,6 @@
           <span class="tag">SSIS</span><span class="tag">SQL Server</span>
           <span class="tag">T-SQL</span><span class="tag">Data Validation</span>
         </div>
-        <!-- <a href="https://github.com/nadun-k-s" target="_blank" class="project-link">GitHub &#8599;</a> -->
       </div>
       <div class="project-card reveal">
         <p class="project-number">04</p>
@@ -286,7 +384,6 @@
           <span class="tag">SQL Server</span><span class="tag">T-SQL</span>
           <span class="tag">Indexing</span><span class="tag">Query Optimisation</span>
         </div>
-        <!-- <a href="https://github.com/nadun-k-s" target="_blank" class="project-link">GitHub &#8599;</a> -->
       </div>
     </div>
   </section>
