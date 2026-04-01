@@ -104,7 +104,7 @@
     .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
     /* ── About ── */
-    .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; }
+    .about-grid { display: grid; grid-template-columns: 1fr 2fr; align-items: start; }
     .about-stats { display: flex; flex-direction: column; gap: 1.5rem; }
     .stat-block { border-left: 2px solid var(--border); padding-left: 1rem; }
     .stat-num { font-family: var(--serif); font-size: 2.8rem; font-weight: 700; color: var(--text); line-height: 1; }
@@ -204,6 +204,18 @@
         height: 76px;
       }
     }
+
+    .stat-label.uni {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .stat-label.uni img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
@@ -262,12 +274,18 @@
         </div>
         <div class="stat-block">
           <div class="stat-num">MSc<span class="stat-status">(Reading)</span></div>
-          <div class="stat-label">Data Science &amp; AI</div>
-          <div class="stat-label">University of Sri Jayewardenepura</div>
+          <div class="stat-label">Data Science & AI</div>
+          <div class="stat-label uni">
+            <img src="logos/usjp.png" alt="USJP" />
+            University of Sri Jayewardenepura
+          </div>
         </div>
         <div class="stat-block">
           <div class="stat-num">BIT</div>
-          <div class="stat-label">University of Colombo</div>
+          <div class="stat-label uni">
+            <img src="logos/ucsc.png" alt="UCSC" />
+            University of Colombo School of Computing
+          </div>
           <div class="stat-label">2025</div>
         </div>
       </div>
