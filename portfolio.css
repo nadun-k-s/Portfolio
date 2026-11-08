@@ -669,3 +669,7 @@ footer span { color: var(--text-muted); font-size: .68rem; }
   .education-item { grid-template-columns: 40px minmax(0, 1fr); gap: .75rem; padding-block: 1.25rem; }
   .education-logo { width: 40px; height: 50px; }
 }
+
+/* Keep lossless image sources within their existing layout frames. */
+.education-logo picture { display: flex; width: 100%; height: 100%; align-items: center; justify-content: center; }
+.project-image-wrap picture { display: block; width: 100%; height: 100%; }
