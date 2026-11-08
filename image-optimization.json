@@ -108,22 +108,50 @@
       "source": "img/nadun-kaushalya.webp",
       "output": "img/responsive/nadun-kaushalya-480.webp",
       "width": 480,
-      "bytes": 26112,
-      "encoding": "WebP quality 92; lossless alpha"
+      "bytes": 30470,
+      "encoding": "WebP quality 94; lossless alpha"
+    },
+    {
+      "source": "img/nadun-kaushalya.webp",
+      "output": "img/responsive/nadun-kaushalya-640.webp",
+      "width": 640,
+      "bytes": 46694,
+      "encoding": "WebP quality 94; lossless alpha"
     },
     {
       "source": "img/nadun-kaushalya.webp",
       "output": "img/responsive/nadun-kaushalya-800.webp",
       "width": 800,
-      "bytes": 57192,
-      "encoding": "WebP quality 92; lossless alpha"
+      "bytes": 66940,
+      "encoding": "WebP quality 94; lossless alpha"
     },
     {
       "source": "img/nadun-kaushalya.webp",
-      "output": "img/responsive/nadun-kaushalya-1199.webp",
-      "width": 1199,
-      "bytes": 116210,
-      "encoding": "WebP quality 92; lossless alpha"
+      "output": "img/responsive/nadun-kaushalya-1000.webp",
+      "width": 1000,
+      "bytes": 95128,
+      "encoding": "WebP quality 94; lossless alpha"
+    },
+    {
+      "source": "img/masters/nadun-kaushalya-master.webp",
+      "output": "img/responsive/nadun-kaushalya-1440.webp",
+      "width": 1440,
+      "bytes": 150626,
+      "encoding": "WebP quality 94; lossless alpha"
+    },
+    {
+      "source": "img/masters/nadun-kaushalya-master.webp",
+      "output": "img/responsive/nadun-kaushalya-1800.webp",
+      "width": 1800,
+      "bytes": 207914,
+      "encoding": "WebP quality 94; lossless alpha"
+    },
+    {
+      "source": "img/masters/nadun-kaushalya-master.webp",
+      "output": "img/responsive/nadun-kaushalya-2200.webp",
+      "width": 2200,
+      "bytes": 275956,
+      "encoding": "WebP quality 94; lossless alpha"
     },
     {
       "source": "img/reporting-warehouse.webp",
@@ -188,5 +216,13 @@
       "bytes": 12298,
       "encoding": "lossless"
     }
-  ]
+  ],
+  "portrait_master": {
+    "path": "img/masters/nadun-kaushalya-master.webp",
+    "width": 2398,
+    "height": 2624,
+    "bytes": 1763142,
+    "source": "img/nadun-kaushalya.webp",
+    "method": "2x faithful resampling; lossless RGBA; no recovered detail"
+  }
 }
