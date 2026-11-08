@@ -1,0 +1,192 @@
+{
+  "original_assets": [
+    {
+      "path": "img/SSIS-architecture.png",
+      "bytes": 2121836
+    },
+    {
+      "path": "img/SSIS-architecture.webp",
+      "bytes": 1357822
+    },
+    {
+      "path": "img/cms-architecture.png",
+      "bytes": 1516810
+    },
+    {
+      "path": "img/cms-architecture.webp",
+      "bytes": 940618
+    },
+    {
+      "path": "img/nadun-kaushalya.webp",
+      "bytes": 700726
+    },
+    {
+      "path": "img/reporting-warehouse.png",
+      "bytes": 1592799
+    },
+    {
+      "path": "img/reporting-warehouse.webp",
+      "bytes": 1017728
+    },
+    {
+      "path": "img/snowflake-full-architecture.png",
+      "bytes": 1549615
+    },
+    {
+      "path": "img/snowflake-full-architecture.webp",
+      "bytes": 1028038
+    },
+    {
+      "path": "logos/rcm.png",
+      "bytes": 175360
+    },
+    {
+      "path": "logos/rcm.webp",
+      "bytes": 130310
+    },
+    {
+      "path": "logos/ucsc.png",
+      "bytes": 27877
+    },
+    {
+      "path": "logos/ucsc.webp",
+      "bytes": 13734
+    },
+    {
+      "path": "logos/usjp.png",
+      "bytes": 603043
+    },
+    {
+      "path": "logos/usjp.webp",
+      "bytes": 382300
+    }
+  ],
+  "generated_assets": [
+    {
+      "source": "img/SSIS-architecture.webp",
+      "output": "img/responsive/SSIS-architecture-480.webp",
+      "width": 480,
+      "bytes": 43910,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/SSIS-architecture.webp",
+      "output": "img/responsive/SSIS-architecture-800.webp",
+      "width": 800,
+      "bytes": 89802,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/SSIS-architecture.webp",
+      "output": "img/responsive/SSIS-architecture-1200.webp",
+      "width": 1200,
+      "bytes": 155908,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/cms-architecture.webp",
+      "output": "img/responsive/cms-architecture-480.webp",
+      "width": 480,
+      "bytes": 36912,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/cms-architecture.webp",
+      "output": "img/responsive/cms-architecture-800.webp",
+      "width": 800,
+      "bytes": 77712,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/cms-architecture.webp",
+      "output": "img/responsive/cms-architecture-1200.webp",
+      "width": 1200,
+      "bytes": 138380,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/nadun-kaushalya.webp",
+      "output": "img/responsive/nadun-kaushalya-480.webp",
+      "width": 480,
+      "bytes": 26112,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/nadun-kaushalya.webp",
+      "output": "img/responsive/nadun-kaushalya-800.webp",
+      "width": 800,
+      "bytes": 57192,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/nadun-kaushalya.webp",
+      "output": "img/responsive/nadun-kaushalya-1199.webp",
+      "width": 1199,
+      "bytes": 116210,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/reporting-warehouse.webp",
+      "output": "img/responsive/reporting-warehouse-480.webp",
+      "width": 480,
+      "bytes": 37834,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/reporting-warehouse.webp",
+      "output": "img/responsive/reporting-warehouse-800.webp",
+      "width": 800,
+      "bytes": 83336,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/reporting-warehouse.webp",
+      "output": "img/responsive/reporting-warehouse-1200.webp",
+      "width": 1200,
+      "bytes": 153040,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/snowflake-full-architecture.webp",
+      "output": "img/responsive/snowflake-full-architecture-480.webp",
+      "width": 480,
+      "bytes": 38180,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/snowflake-full-architecture.webp",
+      "output": "img/responsive/snowflake-full-architecture-800.webp",
+      "width": 800,
+      "bytes": 82590,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "img/snowflake-full-architecture.webp",
+      "output": "img/responsive/snowflake-full-architecture-1200.webp",
+      "width": 1200,
+      "bytes": 151340,
+      "encoding": "WebP quality 92; lossless alpha"
+    },
+    {
+      "source": "logos/rcm.webp",
+      "output": "img/responsive/rcm-96.webp",
+      "width": 96,
+      "bytes": 7898,
+      "encoding": "lossless"
+    },
+    {
+      "source": "logos/ucsc.webp",
+      "output": "img/responsive/ucsc-96.webp",
+      "width": 96,
+      "bytes": 3688,
+      "encoding": "lossless"
+    },
+    {
+      "source": "logos/usjp.webp",
+      "output": "img/responsive/usjp-96.webp",
+      "width": 96,
+      "bytes": 12298,
+      "encoding": "lossless"
+    }
+  ]
+}
