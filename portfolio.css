@@ -645,3 +645,27 @@ footer span { color: var(--text-muted); font-size: .68rem; }
   #projects .project-image-wrap { padding: .65rem; }
   .project-content { padding: 1.25rem; }
 }
+
+/* Education uses one shared structure for every institution. */
+.education-panel { min-width: 0; border: 1px solid #414a57; border-radius: 12px; background: #292f38; overflow: hidden; }
+.education-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; padding: 1.25rem 1.5rem; border-bottom: 1px solid #414a57; }
+.education-header h3 { margin: 0; font-size: 1rem; font-weight: 600; letter-spacing: -.02em; }
+.education-header > span { color: var(--text-muted); font-size: .68rem; }
+.education-list { list-style: none; margin: 0; padding: 0 1.5rem; }
+.education-item { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 1rem; padding: 1.5rem 0; }
+.education-item + .education-item { border-top: 1px solid #414a57; }
+.education-logo { display: flex; align-items: center; justify-content: center; width: 48px; height: 58px; padding: 5px; border-radius: 6px; background: #f1f5f9; }
+.education-logo img { max-width: 100%; width: auto; max-height: 100%; height: auto; object-fit: contain; }
+.education-content { min-width: 0; }
+.education-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .4rem .75rem; margin-bottom: .55rem; color: var(--text-muted); font-size: .62rem; font-weight: 500; }
+.education-meta > span:first-child { letter-spacing: .06em; text-transform: uppercase; }
+.education-status { padding: .15rem .5rem; border-radius: 999px; background: #263d5b; color: #bfdbfe; line-height: 1.5; }
+.education-date { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.education-content h4 { margin: 0 0 .4rem; color: var(--text); font-size: .92rem; font-weight: 600; line-height: 1.45; letter-spacing: -.02em; }
+.education-content p { margin: 0; color: var(--text-secondary); font-size: .75rem; line-height: 1.65; }
+@media (max-width: 540px) {
+  .education-header { padding: 1rem; }
+  .education-list { padding-inline: 1rem; }
+  .education-item { grid-template-columns: 40px minmax(0, 1fr); gap: .75rem; padding-block: 1.25rem; }
+  .education-logo { width: 40px; height: 50px; }
+}
