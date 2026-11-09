@@ -384,7 +384,8 @@ section {
   text-decoration: none;
   transition: color 180ms ease;
 }
-.contact-row-label { min-width: 64px; color: var(--accent); font-size: .64rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.contact-icon { width: 16px; height: 16px; flex-shrink: 0; }
+.contact-row-label { display: inline-flex; align-items: center; gap: .45rem; min-width: 88px; color: var(--accent); font-size: .64rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
 .contact-row:hover { color: #93c5fd; }
 footer {
   display: flex;
@@ -529,7 +530,7 @@ footer span { color: var(--text-muted); font-size: .68rem; }
   .skill-description { min-height: 0; }
   .contact-heading { font-size: clamp(2.6rem, 12vw, 3.8rem); }
   .contact-row, .contact-row:first-child { gap: .5rem; font-size: .68rem; }
-  .contact-row-label { min-width: 58px; }
+  .contact-row-label { min-width: 82px; }
   footer { align-items: flex-start; flex-direction: column; }
   .footer-links { gap: 1rem; }
   .cv-preview-header { align-items: flex-start; }
