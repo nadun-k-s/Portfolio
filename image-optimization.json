@@ -59,6 +59,10 @@
     {
       "path": "logos/usjp.webp",
       "bytes": 382300
+    },
+    {
+      "path": "img/CKDu-multi-agent.png",
+      "bytes": 1742624
     }
   ],
   "generated_assets": [
@@ -214,6 +218,34 @@
       "output": "img/responsive/usjp-96.webp",
       "width": 96,
       "bytes": 12298,
+      "encoding": "lossless"
+    },
+    {
+      "source": "img/CKDu-multi-agent.png",
+      "output": "img/CKDu-multi-agent.webp",
+      "width": 1672,
+      "bytes": 1217128,
+      "encoding": "lossless; exact source pixels"
+    },
+    {
+      "source": "img/CKDu-multi-agent.webp",
+      "output": "img/responsive/CKDu-multi-agent-480.webp",
+      "width": 480,
+      "bytes": 122608,
+      "encoding": "lossless"
+    },
+    {
+      "source": "img/CKDu-multi-agent.webp",
+      "output": "img/responsive/CKDu-multi-agent-800.webp",
+      "width": 800,
+      "bytes": 310608,
+      "encoding": "lossless"
+    },
+    {
+      "source": "img/CKDu-multi-agent.webp",
+      "output": "img/responsive/CKDu-multi-agent-1200.webp",
+      "width": 1200,
+      "bytes": 654738,
       "encoding": "lossless"
     }
   ],
